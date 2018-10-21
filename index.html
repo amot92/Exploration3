@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="calApp">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- angular cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+        <script src="controller.js"></script>
+
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="container" ng-controller="LoginController">
+            <h1 class="text-center">Exploration 3</h1>
+
+            <div class="jumbotron">
+
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col-lg">
+                            <span><img src="bootstrap.png" class="img-responsive" alt="noimage" style="width:420px;height:420px;"/></span>
+                        </div>
+
+                        <div class="col-lg">
+                            <br>
+                            <h2>Login</h2>
+                            <br>
+                            <div class="box">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label">Username:</label>
+
+                                    <div class="col-lg-5">
+                                        <input type="text" 
+                                               ng-model="userName"
+                                               autofocus placeholder="Username" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label">Password:</label>
+
+                                    <div class="col-lg-5">
+                                         <input type="password"
+                                                ng-model="password"
+                                                placeholder="Password" class="form-control">
+                                    </div>
+                                </div>
+
+                                <button 
+                                        class="btn btn-success full-width py-1 my-3"
+                                        ng-click="doLogin()"><span>Login</span></button>
+                            </div>
+                            <p>{{alert}}</p>
+                            <p>user:{{alert2}}</p>
+                            <p>parsedList:{{alert3}}</p>
+                            <p>{{alert4}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--    jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!--    Bootstrap -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        </div>
+    </body>
+</html>
+
+
